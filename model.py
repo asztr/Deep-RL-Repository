@@ -5,15 +5,12 @@ import torch.nn.functional as F
 
 kernel1_size = 1
 
+
+
 class Policy_network(nn.Module):
     """Actor (Policy) Model."""
 
-    ddef __init__(self, m, n, sess, optimizer,
-                 trading_cost=trading_cost,
-                 interest_rate=interest_rate,
-                 n_filter_1=n_filter_1,
-                 n_filter_2=n_filter_2,
-                 seed=20):
+    ddef __init__(self, m, n, sess, optimizer, trading_cost=trading_cost, interest_rate=interest_rate, n_filter_1=n_filter_1, n_filter_2=n_filter_2, seed=20):
 
         """Initialize parameters and build model.
         Params
